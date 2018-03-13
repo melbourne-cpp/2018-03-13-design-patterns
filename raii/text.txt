@@ -1,0 +1,64 @@
+
+
+
+what is RAII ?
+
+	ray-i
+	ray-ii
+	r-a-i-i
+
+	Resource Acquisition is Initialisation
+
+    or for americans...    Resource Acquisition is Initiali[Z]ation
+                                         ^
+                                     why no Z?
+_____________________________________________________________________________
+
+
+examples...
+
+   std::  smart pointers
+
+_____________________________________________________________________________
+
+
+how it works
+
+   we leverage the fact automatic/local vars will have their destructors
+     called as they leave scope.
+
+   as we are aware of an objects scope, this allows us to both know exactly
+     when it will be called, and to not explicitly have to add a line of
+     code for it, as the scope end is already coded as normal program flow.
+   We have already coded the scope of a variable by use of a closing }.
+
+
+_____________________________________________________________________________
+
+
+old skool method..  function pointers,  C++98.. but was possibly back at
+                                        C++'s birth 1983
+
+demo    test1
+
+_____________________________________________________________________________
+
+
+cleaning it up a bit with a template,  C++98.. or slightly nicer with C++11
+
+demo    test2
+
+_____________________________________________________________________________
+
+
+lambdas,  C++11
+
+demo    test3
+
+_____________________________________________________________________________
+
+
+lambdas, passing by ref,  C++11
+
+demo    test4
+
